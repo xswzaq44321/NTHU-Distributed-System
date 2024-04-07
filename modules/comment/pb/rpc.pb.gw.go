@@ -371,7 +371,7 @@ func RegisterCommentHandlerServer(ctx context.Context, mux *runtime.ServeMux, se
 			return
 		}
 
-		forward_Comment_UpdateComment_0(ctx, mux, outboundMarshaler, w, req, response_Comment_UpdateComment_0{resp}, mux.GetForwardResponseOptions()...)
+		forward_Comment_UpdateComment_0(ctx, mux, outboundMarshaler, w, req, resp, mux.GetForwardResponseOptions()...)
 
 	})
 
@@ -520,7 +520,7 @@ func RegisterCommentHandlerClient(ctx context.Context, mux *runtime.ServeMux, cl
 			return
 		}
 
-		forward_Comment_UpdateComment_0(ctx, mux, outboundMarshaler, w, req, response_Comment_UpdateComment_0{resp}, mux.GetForwardResponseOptions()...)
+		forward_Comment_UpdateComment_0(ctx, mux, outboundMarshaler, w, req, resp, mux.GetForwardResponseOptions()...)
 
 	})
 
@@ -546,15 +546,6 @@ func RegisterCommentHandlerClient(ctx context.Context, mux *runtime.ServeMux, cl
 	})
 
 	return nil
-}
-
-type response_Comment_UpdateComment_0 struct {
-	proto.Message
-}
-
-func (m response_Comment_UpdateComment_0) XXX_ResponseBody() interface{} {
-	response := m.Message.(*UpdateCommentResponse)
-	return response.Comment
 }
 
 var (
