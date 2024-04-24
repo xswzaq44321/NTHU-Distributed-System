@@ -57,3 +57,11 @@ To build docker image, run `make dc.image`.
 ## CI/CD
 
 The CI/CD runs in [Github Actions](https://github.com/features/actions). See the [CI workflow spec](.github/workflows/main.yml) and the [CD workflow spec](.github/workflows/deployment.yml) for more details.
+
+# Result
+
+## Metrics
+![alt text](ocje3838Pg.png)
+
+## otelkit tests
+![alt text](F69HVJzPXw.png)
